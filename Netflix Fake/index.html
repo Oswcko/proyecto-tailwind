@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Document</title>
+</head>
+<body class="bg-black">
+    <header class="flex justify-center mt-6 z-20 sticky">
+        <nav class="h-14 w-4/5 flex justify-between items-center px-[1%]">
+            <img class="w-32 h-26" src="images/Logonetflix.png" alt="Logonetflix">
+            <div class="flex gap-3">
+                    <ion-icon class="text-white w-5 h-5 translate-x-14 translate-y-1" name="language-outline"></ion-icon>
+                    <select class="h-8 w-[140px] pl-10 pr-3 bg-black px-2 text-white border-solid rounded-[3px] border-gray-500 border-[1px] focus:border-solid focus:rounded-[8px] focus:border-white focus:border-[2px]" name="idioma" id="idioma">
+                        <option value="español">Español</option>
+                        <option value="english">English</option>
+                    </select>
+                <button class="bg-[#E50914] px-3 duration-300 h-8 w-auto -translate-y-[1px] text-white text-xs rounded-[3px] hover:cursor-pointer hover:bg-[#C11119] font-sans text-xl font-semibold">Iniciar sesión</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div 
+        style="
+            background-image:linear-gradient(to top, rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.596),rgba(0, 0, 0, 0.596),rgba(0, 0, 0, 0.596), transparent,rgba(0, 0, 0, 0.562),rgba(0, 0, 0, 0.596),rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.842)), url('images/netflix-background.jpg') ;
+            width: 100%;
+            height: 600px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: translateY(-80px);
+            height: 520px;" class="z-10 flex justify-center items-center border-b-[6px] border-[#353535]">
+
+            <section class="flex justify-center items-center flex-col gap-6 w-auto h-auto text-white text-center mt-20">
+                <h2 class="text-[32px] font-bold">Películas y series ilimitadas y mucho más</h2>
+                <p class="text-xl">Disfruta cuando quieras. Cancela cuando quieras.</p>
+                <p class="text-lg text-center">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
+                <form class="flex gap-5" action="">
+                    <input class="w-[300px] h-[50px] pl-5 bg-[#0f0f0fbe] border-solid border-[#5E5E5E] border-[1px] rounded-[4px]" type="email" name="email" id="email" placeholder="Email">
+                    <input class="w-36 h-[50px] duration-300 bg-[#E50914] rounded-[4px] hover:bg-[#C11119] hover:cursor-pointer font-sans text-xl font-semibold" type="submit" value="Comenzar">
+                </form>
+            </section>
+        </div>
+        <div class="h-[470px] border-b-[6px] border-[#353535]">
+            <section class="flex justify-center items-center flex-wrap gap-5">
+                <div class="text-white text-center mx-7 flex flex-col gap-5">
+                    <p class="text-4xl font-extrabold font-sans">Disfruta en tu TV</p>
+                    <p class="text-xl">Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</p>
+                </div>
+                <div data-aos="zoom-in-up">
+                    <img class="w-[500px] sticky h-80 z-10" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+                    <img class=" z-0 w-[365px] absolute h-[175px] translate-x-[65px] -translate-y-[253px]" src="https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2021/05/pagina-inicio-netflix-2335333.jpg" alt="">
+                </div>
+            </section>
+        </div>
+        <div class="h-[80vh] border-b-[6px] border-[#353535]">
+            <section class="flex justify-center items-center flex-wrap gap-5">
+                <div class="text-white text-center mx-4 mt-10 flex flex-col gap-5">
+                    <p class="text-3xl font-bold font-sans">Descarga tus series para verlas offline</p>
+                    <p class="text-xl">Guarda tu contenido favorito y tendrás siempre algo para ver.</p>
+                </div>
+                <div data-aos="zoom-in-up">
+                    <img class="w-[500px] sticky h-96" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">
+                    <div class="w-80 h-20 bg-black border-[1px] border-solid border-slate-300 rounded-2xl -translate-y-24 translate-x-[85px] flex justify-between items-center">
+                        <section class="flex gap-4 ml-5">
+                            <img class="w-11 h-14" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" alt="">
+                            <div class="flex flex-col">
+                                <p class="text-white">Stranger Things</p>
+                                <p class="text-blue-700">Descargando...</p>
+                            </div>
+                        </section>
+                        <section class="text-white mr-5">
+                            <ion-icon class="w-8 h-9" name="download-outline"></ion-icon>
+                        </section>
+                    </div>
+                </div>
+                <div class="h-[80vh] w-full border-b-[6px] border-[#353535] flex justify-center items-center flex-wrap mt-10">
+                    <section class="flex justify-center items-center flex-wrap gap-5">
+                        <div class="text-white text-center mx-7 flex flex-col gap-5">
+                            <p class="text-4xl font-extrabold font-sans">Disfruta donde quieras</p>
+                            <p class="text-xl">Películas y series ilimitadas en tu teléfono, tablet, laptop y TV.</p>
+                        </div>
+                        <div data-aos="zoom-in-up">
+                            <img class="w-[500px] sticky h-80 z-10" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt="">
+                            <img class=" z-0 w-[325px] absolute h-[175px] translate-x-[85px] -translate-y-[283px]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA3PFzVGpf-D-bNr2OOCyBvLpN1PWUWX4oCg&s" alt="">
+                        </div>
+                    </section>
+                </div>
+                <div class="h-[80vh] w-full border-b-[6px] border-[#353535] flex justify-center items-center mt-10">
+                    <section class="flex justify-center items-center flex-row flex-wrap gap-5">
+                        <div class="text-white text-center mx-7 flex flex-col gap-5">
+                            <p class="text-4xl font-extrabold font-sans">Crea perfiles para niños</p>
+                            <p class="text-xl text-center w-[500px]">Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, sin costo con tu membresía.</p>
+                        </div>
+                        <div data-aos="zoom-in-up">
+                            <img class="w-[500px] sticky h-96 z-10" src="https://occ-0-4572-3933.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABS2wPb0M8BZZsg7maAVHhc1rfAZm9RWMpYfL95TcWCTiT1OvZGx4qg2NVvAtqK_AONqNNWbJYzdgVvbgrQGgag-qgYnKEi2RKM9A.png?r=25d" alt="">
+                            
+                        </div>
+                    </section>
+                </div>
+                
+           
+        <div class="h-[800px] w-full border-b-[6px] border-[#353535] flex justify-center items-center flex-wrap mt-10">
+            <div class="w-[100%] h-[90%] xl:w-[70%] text-white text-center mx-7 flex flex-col gap-2">
+                <p class="text-4xl font-bold font-sans mb-5">Preguntas frecuentes</p>
+                <section class="w-[100%] h-20 bg-[#2D2D2D] hover:cursor-pointer hover:bg-[#414141] flex justify-between items-center px-5">
+                    <p class="text-xl">¿Qué es Netflix?</p>
+                    <ion-icon class="text-4xl" name="add-outline" ></ion-icon>
+                </section>
+                <section class="w-[100%] h-20 bg-[#2D2D2D] hover:cursor-pointer hover:bg-[#414141] flex justify-between items-center px-5">
+                    <p class="text-xl">¿Cuánto cuesta Netflix?</p>
+                    <ion-icon class="text-4xl" name="add-outline" ></ion-icon>
+                </section>
+                <section class="w-[100%] h-20 bg-[#2D2D2D] hover:cursor-pointer hover:bg-[#414141] flex justify-between items-center px-5">
+                    <p class="text-xl">¿Dónde puedo ver Netflix?</p>
+                    <ion-icon class="text-4xl" name="add-outline" ></ion-icon>
+                </section>
+                <section class="w-[100%] h-20 bg-[#2D2D2D] hover:cursor-pointer hover:bg-[#414141] flex justify-between items-center px-5">
+                    <p class="text-xl">¿Cómo cancelo?</p>
+                    <ion-icon class="text-4xl" name="add-outline" ></ion-icon>
+                </section>
+                <section class="w-[100%] h-20 bg-[#2D2D2D] hover:cursor-pointer hover:bg-[#414141] flex justify-between items-center px-5">
+                    <p class="text-xl">¿Qué puedo ver en Netflix?</p>
+                    <ion-icon class="text-4xl" name="add-outline" ></ion-icon>
+                </section>
+                <section class="w-[100%] h-20 bg-[#2D2D2D] hover:cursor-pointer hover:bg-[#414141] flex justify-between items-center px-5">
+                    <p class="text-xl">¿Es bueno Netflix para los niños?</p>
+                    <ion-icon class="text-4xl" name="add-outline" ></ion-icon>
+                </section>
+                <p class="text-xl mt-8 mb-6">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
+                <form class="flex justify-center items-center gap-5" action="">
+                    <input class="w-[300px] h-[50px] pl-5 bg-[#0f0f0fbe] border-solid border-[#5E5E5E] border-[1px] rounded-[4px]" type="email" name="email" id="email" placeholder="Email">
+                    <input class="w-36 h-[50px] duration-300 bg-[#E50914] rounded-[4px] hover:bg-[#C11119] hover:cursor-pointer font-sans text-xl font-semibold" type="submit" value="Comenzar">
+                </form>
+            </div>
+        </div>
+        <footer class="h-[60vh] w-full border-b-[6px] border-[#353535] flex flex-col gap-5 text-[#b8bebe] underline font-medium px-10 hover:cursor-pointer">
+            <p>¿Preguntas? Llama al 1 (408) 469-4467 (USA)</p>
+            <div class="w-50 h-50 relative flex flex-wrap flex-row gap-4">
+                <section class="flex flex-col gap-4">
+                    <p>Preguntas frecuentes</p>
+                    <p>Cuenta</p>
+                    <p>Relaciones con inversionistas</p>
+                    <p>Prueba de velocidad</p>
+                </section>
+                <section class="flex flex-col gap-4">
+                    <p>Preguntas frecuentes</p>
+                    <p>Cuenta</p>
+                    <p>Relaciones con inversionistas</p>
+                    <p>Prueba de velocidad</p>
+                </section>
+                <section class="flex flex-col gap-4">
+                    <p>Preguntas frecuentes</p>
+                    <p>Cuenta</p>
+                    <p>Relaciones con inversionistas</p>
+                    <p>Prueba de velocidad</p>
+                </section>
+                <section class="flex flex-col gap-4">
+                    <p>Preguntas frecuentes</p>
+                    <p>Cuenta</p>
+                    <p>Relaciones con inversionistas</p>
+                    <p>Prueba de velocidad</p>
+                </section>
+                
+            </div>
+            <ion-icon class="text-white w-5 h-5 translate-x-4 translate-y-12" name="language-outline"></ion-icon>
+            <select class="h-8 w-[140px] pl-10 pr-3 bg-black px-2 text-white border-solid rounded-[3px] border-gray-500 border-[1px] focus:border-solid focus:rounded-[8px] focus:border-white focus:border-[2px]" name="idioma" id="idioma">
+                <option value="español">Español</option>
+                <option value="english">English</option>
+            </select>
+            <p>Netflix Venezuela</p>
+        </footer>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

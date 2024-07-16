@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Document</title>
+</head>
+<body class="bg-black overflow-x-hidden">
+    <header>
+        <nav class="w-screen h-20 bg-[#121210] flex justify-between items-center px-7">
+            <div class="text-5xl font-bold text-white p-4">
+                <label for="menu"><ion-icon name="menu-outline"></ion-icon></label>
+                <input class="hidden peer/menu" type="checkbox" name="menu" id="menu">
+                <aside class="absolute w-96 h-screen -translate-y-16 -translate-x-[490px] bg-[#40D9D7] peer-checked/menu:-translate-x-[42px] text-white z-40 duration-300 flex items-center flex-col gap-5">
+                    <label class="w-11 h-11 absolute top-0 left-0" for="menu">
+                        <img class="w-11 h-11" src="images/icono-cruz.png" alt="">
+                        
+                    </label>
+                    <h3 class="text-2xl mt-48 mb-10">Space Work</h3>
+                    <button class="w-40 h-10 rounded-xl bg-[#0A5A9A] text-lg ">Perfil</button>
+                    <button class="w-40 h-10 rounded-xl bg-[#0A5A9A] text-lg">Proyectos</button>
+                    <a href="pagina-libre.html"><button class="p-4 rounded-xl bg-[#0A5A9A] text-lg">Último proyecto en desarrollo</button></a>
+                </aside>
+            </div>
+
+            <div class="flex lg:mr-40">
+                <h3 class="font-semibold text-2xl lg:text-4xl mr-5 text-[#1D8363]">Padding Web</h3>
+                <button class="w-10 h-10 bg-white text-[#40D9D7] text-2xl rounded-l-lg "><ion-icon name="search-outline"></ion-icon></button>
+                <input class="w-56 h-10 py-4 pl-5 rounded-r-lg lg:w-[600px]" type="search" name="search" id="search">
+            </div>
+
+            <div>
+                <img class="w-20 h-20" src="images/gradiente-ilustracion-pajaro-colorido.png" alt="">
+            </div>
+
+        </nav>
+    </header>
+    <main class="flex relative justify-center items-center flex-wrap w-screen h-auto gap-5 mt-5">
+        <section class="flex w-[850px] justify-center items-center flex-wrap gap-5">
+            <div class="bg-[#121210] w-[400px] h-72 rounded-2xl overflow-y-hidden flex justify-center items-center">
+                <img class="w-[400px] h-96 rounded-2xl" src="images/2956044_672.jpg" alt="">
+            </div>
+            <div class="bg-[#F4F5F7] w-[400px] h-72 rounded-2xl relative flex justify-center items-center flex-col">
+                <div class="w-[100%] h-16 flex justify-center items-start">
+                    <h3 class="text-[#121210] text-4xl cursor-default">Equipo</h3>
+                </div>
+                <div class="w-[350px] flex justify-center items-center gap-5 flex-wrap">
+                    <img class="w-20 h-20 rounded-full cursor-pointer" src="images/27470343_7309707.jpg" alt="">
+                    <img class="w-20 h-20 rounded-full cursor-pointer" src="images/7309681.jpg" alt="">
+                    <img class="w-20 h-20 rounded-full cursor-pointer" src="images/27470359_7309667.jpg" alt="">
+                    <img class="w-20 h-20 rounded-full cursor-pointer" src="images/9334176.jpg" alt="">
+                    <img class="w-20 h-20 rounded-full cursor-pointer" src="images/9334402.jpg" alt="">
+                    <img class="w-20 h-20 rounded-full cursor-pointer" src="images/9720009.jpg" alt="">
+                </div>
+            </div>
+            <div class="bg-[#F4F5F7] w-[400px] h-72 rounded-2xl flex flex-col gap-10 px-5 pt-5 overflow-x-hidden md:w-[800px]">
+                <div class="flex justify-center items-center w-40 h-10 bg-[#40d9d6af] rounded-lg p-6">
+                    <h3 class="text-3xl text-white">Proyectos</h3>
+                </div>
+                <div class="flex gap-5">
+                    <img class="w-44 h-32 rounded-2xl cursor-pointer shadow-xl shadow-gray-700" src="images/aprende-como-eliminar-todo-lo.jpg" alt="">
+                    <img class="w-44 h-32 rounded-2xl cursor-pointer shadow-xl shadow-gray-700" src="images/disney-plus-1060x626.jpg" alt="">
+                    <img class="w-44 h-32 rounded-2xl cursor-pointer shadow-xl shadow-gray-700" src="images/paypal-1.jpg" alt="">
+                    <img class="w-44 h-32 rounded-2xl cursor-pointer shadow-xl shadow-gray-700" src="images/Xbox-Sign-in-1024x576.png" alt="">
+                </div>
+            </div>
+            
+            
+        </section>
+        <aside class="bg-[#121210] w-[400px] h-[700px] flex flex-col justify-start items-center mb-10 rounded-2xl ">
+            <div class="bg-[#40D9D7] w-full h-auto flex justify-center items-center flex-col rounded-2xl pt-8">
+                <img class="w-40 h-36 rounded-full cursor-pointer" src="images/9334402.jpg" alt="">
+                <h4 class="text-2xl text-white mb-9 mt-5 cursor-default">Gary Oldman</h4>
+            </div>
+            <div class="text-white flex flex-col gap-7 mt-8">
+                <p class="text-2xl cursor-default">Proyectos Pendientes</p>
+                <ul class="flex flex-col gap-4 text-lg">
+                    <li class="w-60 h-auto flex justify-between">
+                        <p class="h-10 cursor-default">Apple</p>
+                        <button class="w-10 h-10 rounded-xl bg-[#40D9D7] ml-4">Go!</button>
+                    </li>
+                    <li class="w-60 h-auto flex justify-between">
+                        <p class="h-10 cursor-default">HBO</p>
+                        <button class="w-10 h-10 rounded-xl bg-[#40D9D7] ml-4">Go!</button>
+                    <li class="w-60 h-auto flex justify-between">
+                        <p class="h-10 cursor-default">Amazon Prime</p>
+                        <button class="w-10 h-10 rounded-xl bg-[#40D9D7] ml-4">Go!</button>
+                    </li>
+                </ul>
+                <button class="w-auto h-10 rounded-xl bg-[#40D9D7]">Añadir más proyectos</button>
+            </div>
+        </aside>
+    </main>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

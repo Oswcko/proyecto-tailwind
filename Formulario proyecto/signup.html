@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main class="flex justify-center items-center w-screen h-screen">
+        <img class="w-screen h-screen" src="images/sport-composition-with-modern-elements.jpg" alt="background">
+        <div class="bg-[#d2b2b94d] w-[450px] h-[70%] rounded-xl absolute flex justify-around gap-2 items-center flex-col">
+            
+            <h2 class="text-4xl text-[#694688] font-semibold mt-8">Sign Up</h2>
+            <form class="flex justify-center items-center flex-col gap-4" action="">
+
+                <input class="w-72 h-14 pl-8 rounded-xl text-[#7D4364] active:border-[#7D4364]" type="text" name="user" placeholder="User">
+
+                <input class="w-72 h-14 pl-8 rounded-xl text-[#7D4364] active:border-[#7D4364]" type="email" name="email" id="email" placeholder="Email">
+
+                <input class="w-72 h-14 pl-8 rounded-xl text-[#7D4364] active:border-[#7D4364]" type="number" name="number" id="number" placeholder="Number Phone">
+
+                <div>
+                    <input class="w-40 h-14 pl-4 pr-4 rounded-xl text-[#7D4364] active:border-[#7D4364]" type="date" name="datetime" id="datetime">
+                    <select class="w-32 h-14 pl-4 rounded-xl text-[#7D4364] active:border-[#7D4364]" name="country" id="country">
+                        <option disabled selected>Country</option>
+                        <option value="value">Argentina</option>
+                        <option value="value">Brasil</option>
+                        <option value="value">Chile</option>
+                        <option value="value">Colombia</option>
+                        <option value="value">Venezuela</option>
+                    </select>
+                </div>
+
+                <input class="w-72 h-14 pl-8 rounded-xl text-[#7D4364] pr-5" type="password" name="password" id="password" placeholder="Password">
+
+                <div>
+                    <input type="checkbox" name="condiciones" id="condiciones">
+                    <label for="condiciones">I agree conditions for the page.
+                    </label>
+                </div>
+
+                <input class="bg-[#7D4364] hover:bg-[#975179] text-[#EAE5E3] text-lg px-20 py-3 rounded-xl hover:cursor-pointer font-semibold" type="submit" value="Send">
+            </form>
+        </div>
+    </main>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

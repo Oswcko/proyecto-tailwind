@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Document</title>
+</head>
+<body class="overflow-x-hidden">
+    <header>
+        <nav class="w-screen h-20 bg-[#121210] flex justify-between items-center px-7">
+            <div class="text-5xl font-bold text-white p-4 lg:hidden">
+                <label for="menu"><ion-icon name="menu-outline"></ion-icon></label>
+                <input class="hidden peer/menu" type="checkbox" name="menu" id="menu">
+                <aside class="absolute w-96 h-screen -translate-y-16 -translate-x-[490px] bg-[#121210] peer-checked/menu:-translate-x-[42px] text-white z-40 duration-300 flex items-center flex-col gap-5">
+                    <label class="w-11 h-11 absolute top-0 left-0" for="menu">
+                        <img class="w-11 h-11" src="images/icono-cruz.png" alt="">
+                        
+                    </label>
+                    <h3 class="text-2xl mt-20 mb-10">Menu</h3>
+                    <a href="#main" class="w-full h-20 border-t-red-400 border-t-2 border-b-2 border-b-red-400 text-lg flex justify-center items-center">
+                        Inicio 
+                        <ion-icon name="chevron-forward-outline" class="absolute right-8"></ion-icon>
+                    </a>
+
+                    <a href="#productos" class="w-full h-20 border-t-red-400 border-t-2 border-b-2 border-b-red-400 text-lg flex justify-center items-center">
+                        Productos 
+                        <ion-icon name="chevron-forward-outline" class="absolute right-8"></ion-icon>
+                    </a>
+                </aside>
+            </div>
+            <div class="hidden lg:flex">
+                <a href="#productos"><button class="p-6 text-xl text-white border-b-2 border-b-transparent hover:border-b-red-400">Productos</button></a>
+                <a href="#main"><button class="p-6 text-xl text-white border-b-2 border-b-transparent hover:border-b-red-400">Novedades</button></a>
+            </div>
+
+            <div class="flex lg:mr-40">
+                <button class="w-10 h-10 bg-white text-red-400 text-2xl rounded-l-lg "><ion-icon name="search-outline"></ion-icon></button>
+                <input class="w-56 h-10 py-4 pl-5 rounded-r-lg lg:w-[600px]" type="search" name="search" id="search">
+            </div>
+
+            <div>
+                <img class="w-20 h-20 lg:w-28 lg:h-28" src="https://png.pngtree.com/png-vector/20220621/ourmid/pngtree-circuit-circle-template-vector-illustration-icon-design-png-image_5233944.png" alt="">
+            </div>
+
+        </nav>
+    </header>
+    <main id="main" class="bg-black border-b-4 border-b-red-400">
+        <section class="w-full h-screen border-b-4 border-b-red-400">
+            <div data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" class="w-80 h-52 absolute top-[25%] left-[12%] z-10 lg:left-[25%] lg:w-[500px] lg:h-72">
+                <img  class="w-[500px] h-52 lg:h-72" src="https://www.tuttotech.net/wp-content/uploads/2024/05/Lenovo-Yoga-Slim-7x.jpg" alt="">
+            </div>
+            <div data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" class="bg-[#121210] w-80 h-52 absolute top-[35%] left-[42%] z-20 text-white p-5 pt-2 lg:w-[500px] lg:h-72">
+                <h3 class="text-xl mb-2 lg:text-4xl">Nueva Generacion de Laptops Snapdragon.</h3>
+                <p class="lg:text-xl lg:mt-10">Manten el maximo rendimiento con una eficiencia de un 68% de menor consumo energético con una capacidad de NPU de 45 billiones de operaciones por segundo.</p>
+            </div>
+            <div data-aos="fade-bottom"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" class="bg-red-400 w-[550px] h-28 absolute top-[48%] left-[9%] lg:w-[1000px] lg:h-52 lg:left-[18%]"></div>
+            <h2 class="absolute bottom-10 left-[20%] text-4xl text-white lg:left-[38%]">Qualcomm Snapdragon</h2>
+        </section>
+
+        <section class="h-full relative flex flex-col gap-44 justify-center items-center py-20">
+
+            <h3 id="productos" class="text-4xl text-white mb-10">Laptops que podrían gustarte.</h3>
+
+            <div class="flex flex-col lg:flex-row justify-center gap-5 items-center h-auto w-full">
+                <div class="flex flex-col w-80 h-72 gap-10">
+                    <h3 class="text-4xl text-white">Surface Pro</h3>
+                    <ul class="text-white">
+
+                        <li>Pantalla PixelSense™ de 13"</li>
+
+                        <li>Resolución: 2880x1920 (267 PPI)</li>
+                        
+                        <li>Función táctil: Multitoque de 10 puntos</li>
+
+                        <li>8 GB o 16 GB de RAM LPDDR4x</li>
+                        
+                        <li>GPU Microsoft SQ® 1 Adreno™ 685</li>
+
+                        <li>GPU Microsoft SQ® 2 Adreno™ 690</li>
+                    
+                        <li>Qualcomm Snapdragon X Elite X1E-78-100
+                        </li>
+                    </ul>
+                </div>
+                <img data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" class="w-[500px] h-72" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-SurfacePro-protection-from-chip-feature-panel-2:VP1-1078x606?fmt=png-alpha" alt="">
+            </div>
+
+            <div class="flex flex-col lg:flex-row-reverse justify-center gap-40 lg:gap-20 items-center h-auto w-full">
+                <div class="flex flex-col w-80 h-72 gap-10">
+                    <h3 class="text-4xl text-white">Lenovo Thinkpad T14s</h3>
+                    <ul class="text-white">
+
+                        <li>CPU
+                            Qualcomm Snapdragon X Elite X1E-78-100
+                            </li>
+
+                        <li>Qualcomm Snapdragon X Elite Adreno GPU
+                        </li>
+                        
+                        <li>14.0", FHD+ (1920 x 1200), IPS
+                            14.0″, 2.8K (2880 x 1800), 120 Hz, OLED</li>
+
+                        <li>hasta 1000GB SSD</li>
+                        
+                        <li>RAM up to 64GB</li>
+
+                        <li>Dimensiones 313.6 x 219.4 x 16.9 mm (12.35" x 8.64" x 0.67")</li>
+                    
+                    </ul>
+                </div>
+                <img data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" class="w-[400px] h-72" src="https://p3-ofp.static.pub//fes/cms/2024/06/13/76uox8xkx6iynknriweci0krosxleb210979.png" alt="">
+            </div>
+
+            <div class="flex flex-col lg:flex-row justify-center gap-20 items-center h-auto w-full">
+                <div class="flex flex-col w-80 h-72 gap-10">
+                    <h3 class="text-4xl text-white">Asus VivoBook</h3>
+                    <ul class="text-white">
+                        <li>Sistema Operativo: Windows 11 Home - ASUS recomienda Windows 11 Pro para empresas.</li>
+                        <li>Procesador: Snapdragon® X Elite.</li>
+                        <li>Pantalla:15.6” 3K 120 Hz OLED HDR.</li>
+                        <li>Memoria: 16GB LPDDR5X.</li>
+                        <li>Almacenamiento: 1TB PCIE G4 SSD.</li>
+                        <li>Gráfica: Qualcomm® Adreno™</li>
+                        <li>Delgado y ligero: 1,47 cm, 1,42 kg.</li>
+                    </ul>
+                </div>
+                <img data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" class="w-[400px] h-96" src="https://sg.store.asus.com/media/catalog/product/cache/3a9188d16a7d972e4c08a59f5d40fc85/v/i/vivobook_s_15_oled_product_photo_2s_cool_silver_05.png" alt="">
+
+                
+            </div>
+            <a href="#main"><button class="w-10 h-10 rounded-full bg-red-400 text-white absolute bottom-10 right-20"><ion-icon name="chevron-up-outline"></ion-icon></button></a>
+        </section>
+        
+    </main>
+    <footer class="bg-black text-zinc-600 flex justify-center items-center p-10">
+        <p>©Oswkco Inc. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
